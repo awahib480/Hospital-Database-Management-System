@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- scale to device's screen -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctors - TMH</title>
+    <!-- tab icon -->
+    <link rel="icon" href="assets/images/icon.png" type="Icon">
+    <!--css file link-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/doctorstyles.css"/>
+</head>
+
+<body>
+    <!--top bar-->
+    <div style="width: 100%; height: 50px; position: relative; margin-top: 0%; background-color: rgb(1, 1, 92); display: flex; justify-content: space-between; align-items: center;">
+        <text class="text" style="color: white; font-size: 16px; margin-left: 16px">📍  Karachi, Pakistan</text>
+        <div style="display: flex; gap: 16px;">
+            <a href="main.html"><button class="text button" style="height: 50px; font-size: 14px;">⌂  Home</button></a>
+            <a href="services.html"><button class="text button" style="height: 50px; font-size: 14px;">Services</button></a>
+            <a href="department.html"><button class="text button" style="height: 50px; font-size: 14px;">Departments</button></a>
+            <a href="appointment.html"><button class="text button" style="height: 50px; font-size: 14px;">Appointments</button></a>
+            <a href="admin.html"><button class="text button" style="height: 50px; font-size: 14px;">Admin</button></a>
+        </div>
+    </div>
+    
+    <!--logo-->
+    <img src="assets/images/logo-nobg.png" alt="Logo" style="width: 25%; height:auto; display:block; margin-left:0; margin-top: 20px;">
+    <!--header-->
+    <h1 class="head" style="position: absolute; width:75%; top:120px; left: 25%; font-size: 50px; margin-top: 5px;"> THE MEDISYNC HOSPITAL</h1>
+    <!--text1-->
+    <p class="text" style="position: absolute; width:60%; top: 165px; text-decoration: underline; left: 25%; color:rgb(92, 75, 252); font-size: 22px;"> Centre Of General and Specialized Healthcare Services
+</p>
+    <br>
+    <br>
+    <br>
+    <div class="slide">
+        <div class="mainbox">
+            <div class="box">
+                <div class="text" style="color: rgb(1, 1, 92); font-size: 40px; text-decoration: underline;">
+                    OUR DEDICATED DOCTORS
+                </div>
+                <p class="text" style="font-size: 20px;">
+                    Our doctors at The MediSync Hospital are more than just medical professionals. They are compassionate caregivers dedicated to improving your health and well-being. With years of experience and specialized training, they approach every patient with empathy, expertise, and a commitment to excellence.
+                </p>
+            </div>
+        </div>
+        <div class="box1" ></div>
+    </div>
+    <br>
+    <br>
+    
+    <!-- !!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+    <br>
+    <section class="contact-us">
+        <h2>CONTACT US</h2>
+        <hr class="divider">
+        
+        <div class="contact-info">
+            <div class="info-box">
+                <h3 class="text">📍 Location</h3>
+                <p class="text">123 Healthcare St, Karachi, Pakistan</p>
+            </div>
+            <div class="info-box">
+                <h3 class="text">📞 Phone</h3>
+                <p class="text">+92 123-4567890</p>
+            </div>
+            <div class="info-box">
+                <h3 class="text">🕒 Hours</h3>
+                <p class="text">Mon-Sat: 8 AM - 8 PM | Emergency 24/7</p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+        <!-- Common background -->
+        <div id="popup-background" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5);">
+
+        <!-- Doctor Info Popup -->
+        <div id="doctor-info-popup" style="display: none; background: white; padding: 20px; border-radius: 8px; width: 300px; margin: 100px auto; position: relative;">
+            <button onclick="closePopup()" id="close-btn">X</button>
+            <div id="doctor-info-content"></div>
+        </div>
+
+        <!-- Alert Popup -->
+        <div id="alert-popup" style="display: none; background: white; padding: 20px; border-radius: 8px; width: 250px; margin: 150px auto; position: relative;">
+            <button onclick="closePopup()" id="close-btn">X</button>
+            <h2>Alert</h2>
+            <p>Doctor Not Found!</p>
+        </div>
+
+    </div>
+
+
+    <!-- JavaScript file link -->
+    <script src="assets/js/doctornames.js"></script>
+    <script src="assets/js/doctor.js" defer></script>
+</body>
+</html>
+
+

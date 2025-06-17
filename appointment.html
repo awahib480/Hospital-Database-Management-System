@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- scale to device's screen -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointments - TMH</title>
+    <!-- tab icon -->
+    <link rel="icon" href="assets/images/icon.png" type="Icon">
+    <!--css file link-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/appointstyles.css"/>
+</head>
+
+<body>
+    <!--top bar-->
+    <div style="width: 100%; height: 50px; position: relative; margin-top: 0%; background-color: rgb(1, 1, 92); display: flex; justify-content: space-between; align-items: center;">
+        <text class="text" style="color: white; font-size: 16px; margin-left: 16px">📍  Karachi, Pakistan</text>
+        <div style="display: flex; gap: 16px;">
+            <a href="main.html"><button class="text button" style="height: 50px; font-size: 14px;">⌂  Home</button></a>
+            <a href="services.html"><button class="text button" style="height: 50px; font-size: 14px;">Services</button></a>
+            <a href="department.html"><button class="text button" style="height: 50px; font-size: 14px;">Departments</button></a>
+            <a href="doctor.html"><button class="text button" style="height: 50px; font-size: 14px;">Doctors</button></a>
+            <a href="admin.html"><button class="text button" style="height: 50px; font-size: 14px;">Admin</button></a>
+        </div>
+    </div>
+    
+    <!--logo-->
+    <img src="assets/images/logo-nobg.png" alt="Logo" style="width: 25%; height:auto; display:block; margin-left:0; margin-top: 20px;">
+    <!--header-->
+    <h1 class="head" style="position: absolute; width:75%; top:120px; left: 25%; font-size: 50px; margin-top: 5px;"> THE MEDISYNC HOSPITAL</h1>
+    <!--text1-->
+    <p class="text" style="position: absolute; width:60%; top: 165px; text-decoration: underline; left: 25%; color:rgb(92, 75, 252); font-size: 22px;"> Centre Of General and Specialized Healthcare Services
+</p>
+
+    <!-- heading -->
+    <div class="container"><p class="text" style="font-size: 40px; margin-top: 15px; margin-bottom: 10px; color: rgb(1,1,92); text-decoration: underline; width: 100%; display: block">APPOINTMENTS</p>        
+    </div>
+    
+    <!-- Tabs -->
+<div class="tabs" style="margin-top: 40px;">
+    <button class="tab-button active" data-target="book">Book Appointment</button>
+    <button class="tab-button" data-target="status">Check Status</button>
+  </div>
+  
+  <!-- Book Appointment -->
+  <div id="book" class="tab-content active">
+    <form id="bookForm" class="form-container">
+      <div>
+        <label class="text">Patient Name:</label>
+        <input type="text" name="name" required />
+      </div>
+      <div>
+        <label class="text">Age:</label>
+        <input type="number" name="age" required />
+      </div>
+      <div>
+        <label class="text">Gender:</label>
+        <select name="gender" required>
+          <option value="">Select</option>
+          <option>Male</option>
+          <option>Female</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div>
+        <label class="text">Phone No.:</label>
+        <input type="tel" name="phoneno" required />
+      </div>
+      <div>
+        <label class="text">Email:</label>
+        <input type="email" name="email" required />
+      </div>
+      <div>
+        <label class="text">Doctor:</label>
+        <select name="doctor" required>
+          <option value="">Select</option>
+          <option value="1">Dr. John Smith (Cardiology)</option>
+            <option value="2">Dr. Alan Cooper (Cardiology)</option>
+            <option value="3">Dr. Rachel Adams (Cardiology)</option>
+            <option value="4">Dr. Emily Johnson (Neurology)</option>
+            <option value="5">Dr. Henry Lee (Neurology)</option>
+            <option value="6">Dr. Natalie Thomas (Neurology)</option>
+            <option value="7">Dr. David Williams (Orthopedics)</option>
+            <option value="8">Dr. Megan Clark (Orthopedics)</option>
+            <option value="9">Dr. Brian Lee (Orthopedics)</option>
+            <option value="10">Dr. Laura Brown (Pediatrics)</option>
+            <option value="11">Dr. Jessica White (Pediatrics)</option>
+            <option value="12">Dr. Kevin Harris (Pediatrics)</option>
+            <option value="13">Dr. James Miller (General Surgery)</option>
+            <option value="14">Dr. Sarah King (General Surgery)</option>
+            <option value="15">Dr. William Scott (General Surgery)</option>
+            <option value="16">Dr. Sophia Davis (Dermatology)</option>
+            <option value="17">Dr. Mark Allen (Dermatology)</option>
+            <option value="18">Dr. Olivia Clark (Dermatology)</option>
+            <option value="19">Dr. Carlos Garcia (Oncology)</option>
+            <option value="20">Dr. Maria Perez (Oncology)</option>
+            <option value="21">Dr. Thomas Walker (Oncology)</option>
+            <option value="22">Dr. Maria Martinez (Radiology)</option>
+            <option value="23">Dr. Joseph Lewis (Radiology)</option>
+            <option value="24">Dr. Emily Harris (Radiology)</option>
+            <option value="25">Dr. Daniel Robinson (Psychiatry)</option>
+            <option value="26">Dr. Laura Evans (Psychiatry)</option>
+            <option value="27">Dr. Brian Mitchell (Psychiatry)</option>
+            <option value="28">Dr. Linda Clark (Urology)</option>
+            <option value="29">Dr. Kevin Moore (Urology)</option>
+            <option value="30">Dr. Jessica White (Urology)</option>
+        </select>
+      </div>
+      <div>
+        <label class="text">Date:</label>
+        <input type="date" name="date" required />
+      </div>
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+  
+  <!-- Check Status -->
+  <div id="status" class="tab-content">
+    <form id="statusForm" class="form-container">
+      <div>
+        <label class="text">Appointment ID:</label>
+        <input type="text" name="appointment_id" required />
+      </div>
+      <div>
+        <button type="submit">Check</button>
+      </div>
+    </form>
+    <div id="statusResult"></div>
+  </div>
+
+  <!-- Modal for Appointment ID -->
+  <div id="appointmentModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <p>Your Appointment ID is:</p>
+    <h2 id="apptIdDisplay"></h2>
+    <button id="copyBtn">Copy to Clipboard</button>
+  </div>
+  </div>
+
+  <!-- JS File -->
+  <script src="assets/js/appointment.js"></script>
+</body>
+</html>

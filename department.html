@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Departments - TMH</title>
+    <!-- tab icon -->
+    <link rel="icon" href="assets/images/icon.png" type="Icon">
+    <!--css file link-->
+    <link rel="stylesheet" href="assets/css/deptstyles.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/keyframes.css">
+</head>
+<body>
+    <!--top bar-->
+    <div style="width: 100%; height: 50px; position: relative; margin-top: 0%; background-color: rgb(1, 1, 92); display: flex; justify-content: space-between; align-items: center;">
+        <text class="text" style="color: white; font-size: 16px; margin-left: 16px">📍  Karachi, Pakistan</text>
+        <div style="display: flex; gap: 16px;">
+            <a href="main.html"><button class="text button" style="height: 50px; font-size: 14px;">⌂  Home</button></a>
+            <a href="services.html"><button class="text button" style="height: 50px; font-size: 14px;">Services</button></a>
+            <a href="doctor.html"><button class="text button" style="height: 50px; font-size: 14px;">Doctors</button></a>
+            <a href="appointment.html"><button class="text button" style="height: 50px; font-size: 14px;">Appointments</button></a>
+            <a href="admin.html"><button class="text button" style="height: 50px; font-size: 14px;">Admin</button></a>
+        </div>
+    </div>
+    
+    <!--logo-->
+    <img src="assets/images/logo-nobg.png" alt="Logo" style="width: 25%; height:auto; display:block; margin-left:0; margin-top: 20px;">
+    <!--header-->
+    <h1 class="head" style="position: absolute; width:75%; top:120px; left: 25%; font-size: 50px; margin-top: 5px;"> THE MEDISYNC HOSPITAL</h1>
+    <!--text1-->
+    <p class="text" style="position: absolute; width:60%; top: 190px; text-decoration: underline; left: 25%; color:rgb(92, 75, 252); font-size: 22px;"> Centre Of General and Specialized Healthcare Services
+</p>
+    
+    <!-- Department Section -->
+    <section class="department-section">
+        <div class="container"><p class="text" style="font-size: 40px; margin-top: 0px; margin-bottom: 10px; color: rgb(1,1,92); text-decoration: underline; width: 100%; display: block">OUR DEPARTMENTS</p>        </div>
+        <div id="departmentGrid" class="department-grid"></div>
+    </section>
+
+    <!-- About section -->
+    <section class="about-us" style="margin-top: 45px;">
+        <h2 class="text">ABOUT US</h2>
+        <hr class="divider">
+        <p class="text" style="font: size 18px">At MediSync Hospital, we prioritize your well-being with expert care, advanced technology, and personalized treatments.</p>
+        
+        <div class="features">
+            <div class="feature">
+                <h3 class="text">🌍 Global Standards</h3>
+                <p class="text">State-of-the-art medical technology.</p>
+            </div>
+            <div class="feature">
+                <h3 class="text">💙 Compassionate Care</h3>
+                <p class="text">Our doctors put patients first.</p>
+            </div>
+            <div class="feature">
+                <h3 class="text">✔ Specialized Services</h3>
+                <p class="text">From diagnostics to rehabilitation.</p>
+            </div>
+        </div>
+        
+        <a href="appointment.html" class="text button" style="margin-top: 16px">Book an Appointment</a>
+    </section>
+
+
+    <!--Contact us section-->
+    <section class="contact-us">
+        <h2 class="text">CONTACT US</h2>
+        <hr class="divider">
+        
+        <div class="contact-info">
+            <div class="info-box">
+                <h3 class="text">📍 Location</h3>
+                <p class="text">123 Healthcare St, Karachi, Pakistan</p>
+            </div>
+            <div class="info-box">
+                <h3 class="text">📞 Phone</h3>
+                <p class="text">+92 123-4567890</p>
+            </div>
+            <div class="info-box">
+                <h3 class="text">🕒 Hours</h3>
+                <p class="text">Mon-Sat: 8 AM - 8 PM | Emergency 24/7</p>
+            </div>
+        </div>
+    </section>
+    
+    <script src="assets/js/deptnames.js"></script>
+</body>    
+
