@@ -1,0 +1,119 @@
+INSERT INTO Patient (Name, Age, Gender, PhoneNo, Email) VALUES ('John Doe', 30, 'Male', '9876543210', 'john.doe@example.com');
+INSERT INTO Patient (Name, Age, Gender, PhoneNo, Email) VALUES ('Jane Doe', 25, 'Female', '9876543211', 'jane.doe@example.com');
+INSERT INTO Patient (Name, Age, Gender, PhoneNo, Email) VALUES ('Mike Ross', 40, 'Male', '9876543212', 'mike.ross@example.com');
+INSERT INTO Patient (Name, Age, Gender, PhoneNo, Email) VALUES ('Rachel Zane', 35, 'Female', '9876543213', 'rachel.zane@example.com');
+INSERT INTO Patient (Name, Age, Gender, PhoneNo, Email) VALUES ('Harvey Specter', 45, 'Male', '9876543214', 'harvey.specter@example.com');
+INSERT INTO Patient (Name, Age, Gender, PhoneNo, Email) VALUES ('Louis Litt', 50, 'Male', '9876543215', 'louis.litt@example.com');
+INSERT INTO Patient (Name, Age, Gender, PhoneNo, Email) VALUES ('Donna Paulsen', 38, 'Female', '9876543216', 'donna.paulsen@example.com');
+INSERT INTO Patient (Name, Age, Gender, PhoneNo, Email) VALUES ('Jessica Pearson', 42, 'Female', '9876543217', 'jessica.pearson@example.com');
+INSERT INTO Patient (Name, Age, Gender, PhoneNo, Email) VALUES ('Sheila Sazs', 32, 'Female', '9876543218', 'sheila.sazs@example.com');
+INSERT INTO Patient (Name, Age, Gender, PhoneNo, Email) VALUES ('Trevor Evans', 29, 'Male', '9876543219', 'trevor.evans@example.com');
+
+
+INSERT INTO Department (DeptID, DeptName, Location, HODName) VALUES (1, 'Cardiology', 'Block A', 'Dr. John Smith');
+INSERT INTO Department (DeptID, DeptName, Location, HODName) VALUES (2, 'Neurology', 'Block A', 'Dr. Emily Johnson');
+INSERT INTO Department (DeptID, DeptName, Location, HODName) VALUES (3, 'Orthopedics', 'Block B', 'Dr. David Williams');
+INSERT INTO Department (DeptID, DeptName, Location, HODName) VALUES (4, 'Pediatrics', 'Block B', 'Dr. Laura Brown');
+INSERT INTO Department (DeptID, DeptName, Location, HODName) VALUES (5, 'General Surgery', 'Block C', 'Dr. James Miller');
+INSERT INTO Department (DeptID, DeptName, Location, HODName) VALUES (6, 'Dermatology', 'Block C', 'Dr. Sophia Davis');
+INSERT INTO Department (DeptID, DeptName, Location, HODName) VALUES (7, 'Oncology', 'Block D', 'Dr. Carlos Garcia');
+INSERT INTO Department (DeptID, DeptName, Location, HODName) VALUES (8, 'Radiology', 'Block D', 'Dr. Maria Martinez');
+INSERT INTO Department (DeptID, DeptName, Location, HODName) VALUES (9, 'Psychiatry', 'Block E', 'Dr. Daniel Robinson');
+INSERT INTO Department (DeptID, DeptName, Location, HODName) VALUES (10, 'Urology', 'Block E', 'Dr. Linda Clark');
+
+
+INSERT INTO Doctor (Name, ContactNo, Email, Specialization, ExperienceYears, DeptID) 
+VALUES ('Dr. John Smith', '555-0101', 'john.smith@hospital.com', 'Cardiology', 15, 1);  -- HOD
+INSERT INTO Doctor (Name, ContactNo, Email, Specialization, ExperienceYears, DeptID) 
+VALUES ('Dr. Alan Cooper', '555-0102', 'alan.cooper@hospital.com', 'Cardiology', 12, 1);
+INSERT INTO Doctor (Name, ContactNo, Email, Specialization, ExperienceYears, DeptID) 
+VALUES ('Dr. Rachel Adams', '555-0103', 'rachel.adams@hospital.com', 'Cardiology', 8, 1);
+-- Neurology Department (DeptID = 2)
+INSERT INTO Doctor (Name, ContactNo, Email, Specialization, ExperienceYears, DeptID) 
+VALUES ('Dr. Emily Johnson', '555-0201', 'emily.johnson@hospital.com', 'Neurology', 10, 2);  -- HOD
+INSERT INTO Doctor (Name, ContactNo, Email, Specialization, ExperienceYears, DeptID) 
+VALUES ('Dr. Henry Lee', '555-0202', 'henry.lee@hospital.com', 'Neurology', 6, 2);
+INSERT INTO Doctor (Name, ContactNo, Email, Specialization, ExperienceYears, DeptID) 
+VALUES ('Dr. Natalie Thomas', '555-0203', 'natalie.thomas@hospital.com', 'Neurology', 7, 2);
+-- Orthopedics Department (DeptID = 3)
+INSERT INTO Doctor (Name, ContactNo, Email, Specialization, ExperienceYears, DeptID) 
+VALUES ('Dr. David Williams', '555-0301', 'david.williams@hospital.com', 'Orthopedics', 18, 3);  -- HOD
+INSERT INTO Doctor (Name, ContactNo, Email, Specialization, ExperienceYears, DeptID) 
+VALUES ('Dr. Megan Clark', '555-0302', 'megan.clark@hospital.com', 'Orthopedics', 10, 3);
+INSERT INTO Doctor (Name, ContactNo, Email, Specialization, ExperienceYears, DeptID) 
+VALUES ('Dr. Brian Lee', '555-0303', 'brian.lee@hospital.com', 'Orthopedics', 9, 3);
+-- Pediatrics Department (DeptID = 4)
+INSERT INTO Doctor (Name, ContactNo, Email, Specialization, ExperienceYears, DeptID) 
+VALUES ('Dr. Laura Brown', '555-0401', 'laura.brown@hospital.com', 'Pediatrics', 14, 4);  -- HOD
+INSERT INTO Doctor (Name, ContactNo, Email, Specialization, ExperienceYears, DeptID) 
+VALUES ('Dr. Jessica White', '555-0402', 'jessica.white@hospital.com', 'Pediatrics', 6, 4);
+INSERT INTO Doctor (Name, ContactNo, Email, Specialization, ExperienceYears, DeptID) 
+VALUES ('Dr. Kevin Harris', '555-0403', 'kevin.harris@hospital.com', 'Pediatrics', 8, 4);
+-- General Surgery Department (DeptID = 5)
+INSERT INTO Doctor (Name, ContactNo, Email, Specialization, ExperienceYears, DeptID) 
+VALUES ('Dr. James Miller', '555-0501', 'james.miller@hospital.com', 'General Surgery', 20, 5);  -- HOD
+INSERT INTO Doctor (Name, ContactNo, Email, Specialization, ExperienceYears, DeptID) 
+VALUES ('Dr. Sarah King', '555-0502', 'sarah.king@hospital.com', 'General Surgery', 12, 5);
+INSERT INTO Doctor (Name, ContactNo, Email, Specialization, ExperienceYears, DeptID) 
+VALUES ('Dr. William Scott', '555-0503', 'william.scott@hospital.com', 'General Surgery', 15, 5);
+-- Dermatology Department (DeptID = 6)
+INSERT INTO Doctor (Name, ContactNo, Email, Specialization, ExperienceYears, DeptID) 
+VALUES ('Dr. Sophia Davis', '555-0601', 'sophia.davis@hospital.com', 'Dermatology', 11, 6);  -- HOD
+INSERT INTO Doctor (Name, ContactNo, Email, Specialization, ExperienceYears, DeptID) 
+VALUES ('Dr. Mark Allen', '555-0602', 'mark.allen@hospital.com', 'Dermatology', 9, 6);
+INSERT INTO Doctor (Name, ContactNo, Email, Specialization, ExperienceYears, DeptID) 
+VALUES ('Dr. Olivia Clark', '555-0603', 'olivia.clark@hospital.com', 'Dermatology', 7, 6);
+-- Oncology Department (DeptID = 7)
+INSERT INTO Doctor (Name, ContactNo, Email, Specialization, ExperienceYears, DeptID) 
+VALUES ('Dr. Carlos Garcia', '555-0701', 'carlos.garcia@hospital.com', 'Oncology', 18, 7);  -- HOD
+INSERT INTO Doctor (Name, ContactNo, Email, Specialization, ExperienceYears, DeptID) 
+VALUES ('Dr. Maria Perez', '555-0702', 'maria.perez@hospital.com', 'Oncology', 13, 7);
+INSERT INTO Doctor (Name, ContactNo, Email, Specialization, ExperienceYears, DeptID) 
+VALUES ('Dr. Thomas Walker', '555-0703', 'thomas.walker@hospital.com', 'Oncology', 9, 7);
+-- Radiology Department (DeptID = 8)
+INSERT INTO Doctor (Name, ContactNo, Email, Specialization, ExperienceYears, DeptID) 
+VALUES ('Dr. Maria Martinez', '555-0801', 'maria.martinez@hospital.com', 'Radiology', 14, 8);  -- HOD
+INSERT INTO Doctor (Name, ContactNo, Email, Specialization, ExperienceYears, DeptID) 
+VALUES ('Dr. Joseph Lewis', '555-0802', 'joseph.lewis@hospital.com', 'Radiology', 11, 8);
+INSERT INTO Doctor (Name, ContactNo, Email, Specialization, ExperienceYears, DeptID) 
+VALUES ('Dr. Emily Harris', '555-0803', 'emily.harris@hospital.com', 'Radiology', 8, 8);
+-- Psychiatry Department (DeptID = 9)
+INSERT INTO Doctor (Name, ContactNo, Email, Specialization, ExperienceYears, DeptID) 
+VALUES ('Dr. Daniel Robinson', '555-0901', 'daniel.robinson@hospital.com', 'Psychiatry', 16, 9);  -- HOD
+INSERT INTO Doctor (Name, ContactNo, Email, Specialization, ExperienceYears, DeptID) 
+VALUES ('Dr. Laura Evans', '555-0902', 'laura.evans@hospital.com', 'Psychiatry', 10, 9);
+INSERT INTO Doctor (Name, ContactNo, Email, Specialization, ExperienceYears, DeptID) 
+VALUES ('Dr. Brian Mitchell', '555-0903', 'brian.mitchell@hospital.com', 'Psychiatry', 9, 9);
+-- Urology Department (DeptID = 10)
+INSERT INTO Doctor (Name, ContactNo, Email, Specialization, ExperienceYears, DeptID) 
+VALUES ('Dr. Linda Clark', '555-1001', 'linda.clark@hospital.com', 'Urology', 13, 10);  -- HOD
+INSERT INTO Doctor (Name, ContactNo, Email, Specialization, ExperienceYears, DeptID) 
+VALUES ('Dr. Kevin Moore', '555-1002', 'kevin.moore@hospital.com', 'Urology', 8, 10);
+INSERT INTO Doctor (Name, ContactNo, Email, Specialization, ExperienceYears, DeptID) 
+VALUES ('Dr. Jessica White', '555-1003', 'jessica.whitee@hospital.com', 'Urology', 6, 10);
+
+
+-- Completed (Previous Date)
+INSERT INTO Appointment (PatientID, DoctorID, DeptID, AppointmentDate, Status)
+VALUES (1, 1, 1, '04-MAR-25', 'Completed');  -- Dr. John Smith, Cardiology (Patient 1)
+INSERT INTO Appointment (PatientID, DoctorID, DeptID, AppointmentDate, Status)
+VALUES (2, 1, 1, '04-MAR-25', 'Completed');  -- Dr. John Smith, Cardiology (Patient 2)
+-- Cancelled
+INSERT INTO Appointment (PatientID, DoctorID, DeptID, AppointmentDate, Status)
+VALUES (3, 3, 3, '06-MAR-25', 'Cancelled');  -- Dr. David Williams, Orthopedics (Patient 3)
+INSERT INTO Appointment (PatientID, DoctorID, DeptID, AppointmentDate, Status)
+VALUES (4, 4, 4, '07-MAR-25', 'Cancelled');  -- Dr. Laura Brown, Pediatrics (Patient 4)
+-- Scheduled
+INSERT INTO Appointment (PatientID, DoctorID, DeptID, AppointmentDate, Status)
+VALUES (5, 5, 5, '20-MAR-25', 'Scheduled');  -- Dr. James Miller, General Surgery (Patient 5)
+INSERT INTO Appointment (PatientID, DoctorID, DeptID, AppointmentDate, Status)
+VALUES (6, 6, 6, '21-MAR-25', 'Scheduled');  -- Dr. Sophia Davis, Dermatology (Patient 6)
+-- Pending
+INSERT INTO Appointment (PatientID, DoctorID, DeptID, AppointmentDate, Status)
+VALUES (7, 7, 7, '12-MAR-25', 'Pending');  -- Dr. Carlos Garcia, Oncology (Patient 7)
+INSERT INTO Appointment (PatientID, DoctorID, DeptID, AppointmentDate, Status)
+VALUES (8, 8, 8, '13-MAR-25', 'Pending');  -- Dr. Maria Martinez, Radiology (Patient 8)
+INSERT INTO Appointment (PatientID, DoctorID, DeptID, AppointmentDate, Status)
+VALUES (9, 9, 9, '14-MAR-25', 'Pending');  -- Dr. Daniel Robinson, Psychiatry (Patient 9)
+INSERT INTO Appointment (PatientID, DoctorID, DeptID, AppointmentDate, Status)
+VALUES (10, 10, 10, '15-MAR-25', 'Pending');  -- Dr. Linda Clark, Urology (Patient 10)
