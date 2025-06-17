@@ -1,0 +1,61 @@
+.about-us {
+    text-align: center;
+    padding: 40px;
+    background: #f8f9fa;
+    margin-top: 160px;
+    border-radius: 12px;
+}
+h2 {
+    font-size: 28px;
+    color: rgb(1,1,92);
+}
+.divider {
+    width: 80px;
+    height: 3px;
+    background: rgb(1,1,92);
+    margin: 10px auto;
+    border: none;
+}
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+.feature {
+    width: 30%;
+    padding: 15px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+
+.contact-us {
+    text-align: center;
+    padding: 40px;
+    background: #f8f9fa;
+    margin-top: 30px;
+    border-radius: 12px;
+}
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+.info-box {
+    width: 30%;
+    padding: 15px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
